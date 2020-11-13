@@ -1,0 +1,9 @@
+H:\HP\1. Portafolio\BlazorAppVS\BlazorAppVS\Shared\bin\Debug\netstandard2.1\BlazorAppVS.Shared.deps.json
+H:\HP\1. Portafolio\BlazorAppVS\BlazorAppVS\Shared\bin\Debug\netstandard2.1\BlazorAppVS.Shared.dll
+H:\HP\1. Portafolio\BlazorAppVS\BlazorAppVS\Shared\bin\Debug\netstandard2.1\BlazorAppVS.Shared.pdb
+H:\HP\1. Portafolio\BlazorAppVS\BlazorAppVS\Shared\obj\Debug\netstandard2.1\BlazorAppVS.Shared.csprojAssemblyReference.cache
+H:\HP\1. Portafolio\BlazorAppVS\BlazorAppVS\Shared\obj\Debug\netstandard2.1\BlazorAppVS.Shared.AssemblyInfoInputs.cache
+H:\HP\1. Portafolio\BlazorAppVS\BlazorAppVS\Shared\obj\Debug\netstandard2.1\BlazorAppVS.Shared.AssemblyInfo.cs
+H:\HP\1. Portafolio\BlazorAppVS\BlazorAppVS\Shared\obj\Debug\netstandard2.1\BlazorAppVS.Shared.csproj.CoreCompileInputs.cache
+H:\HP\1. Portafolio\BlazorAppVS\BlazorAppVS\Shared\obj\Debug\netstandard2.1\BlazorAppVS.Shared.dll
+H:\HP\1. Portafolio\BlazorAppVS\BlazorAppVS\Shared\obj\Debug\netstandard2.1\BlazorAppVS.Shared.pdb

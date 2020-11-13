@@ -1,0 +1,70 @@
+﻿@inject IJSRuntime js
+
+@*<input type="checkbox" @onchange="@(() => displayButtons = !displayButtons)" />*@
+<input type="checkbox" @bind="displayButtons" />
+
+<GenericList Listado="Movies">
+    <HayRegistros Context="movie">
+        <IndividualMovie Movie="movie" DisplayButtons="displayButtons" MovieDelete="MovieDelete" />
+    </HayRegistros>
+</GenericList>
+
+<Confirmacion @ref="confirmacion" onConfirm="EliminarPeliculaConfirmacion" onCancel="onCancelConfirmacion">
+    <div>¿Desea borrar la película?</div>
+</Confirmacion>
+
+@code {
+
+    Confirmacion confirmacion;
+    [Parameter] public List<Movie> Movies { get; set; }
+
+    protected override void OnInitialized()
+    {
+        Console.WriteLine($"OnInitialized - Cantidad Peliculas: {Movies.Count.ToString()}");
+    }
+
+    protected override void OnParametersSet()
+    {
+        Console.WriteLine($"OnParametersSet - Cantidad Peliculas: {Movies.Count}");
+    }
+
+    protected override void OnAfterRender(bool primerRenderizacion)
+    {
+        Console.WriteLine($"OnAfterRender: Primera vez: {primerRenderizacion}");
+    }
+
+    protected override bool ShouldRender()
+    {
+        Console.WriteLine("ShouldRender");
+        return true;
+    }
+
+    bool displayButtons = true;
+
+    async Task MovieDelete(Movie movie)
+    {
+        //var confirmado = await js.Confirm($"¿Desea borrar la película {movie.Title}?");
+        //if (confirmado)
+        //{
+        //    Movies.Remove(movie);
+        //    Console.WriteLine($"Se ha eliminado una pelicula {movie.Title}");
+        //}
+        confirmacion.Mostrar();
+        movieDelete = movie;
+
+    }
+
+    Movie movieDelete;
+    void EliminarPeliculaConfirmacion()
+    {
+        Movies.Remove(movieDelete);
+        movieDelete = null;
+        confirmacion.Ocultar();
+    }
+
+    void onCancelConfirmacion()
+    {
+        confirmacion.Ocultar();
+        movieDelete = null;
+    }
+}

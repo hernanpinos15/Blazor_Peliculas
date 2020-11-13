@@ -1,0 +1,157 @@
+﻿@page "/"
+@inject ServicioSingleton singleton
+@inject IRepositorio repositorio
+@using static BlazorAppVS.Client.Shared.MainLayout;
+
+<p style="color: @appState.Color">El valor del singleton es: @singleton.Valor</p>
+
+@*<p>Hello, @StringUtilities.CustomToUpper(name)</p>
+
+    <p> Let´s add 2+2 = @(2+2)</p>
+
+    <button @onclick="@(() => Console.WriteLine("I've been clicked!"))">Click me</button>
+
+    <button @onclick="@WriteInLog">Click me</button>*@
+
+@*<div>
+        <h3>Movie</h3>
+        <p>Title: <b>@spiderman.Title</b></p>
+        <p>Release Date: <b>@spiderman.ReleaseDate.ToString("dd MM yyyy")</b></p>
+    </div>*@
+
+@*<label>Foreach</label>
+    <div>
+        <h3>Movie</h3>
+        @foreach (var movie in movies)
+        {
+            <div>
+                <p>Title: <b>@movie.Title</b></p>
+                <p>Release Date: <b>@movie.ReleaseDate.ToString("dd MM yyyy")</b></p>
+            </div>
+        }
+    </div>*@
+
+@*<label>For</label>*@
+<div>
+    <h3>Movies</h3>
+    @*@if (Movies == null)
+        {
+            <img src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" />
+            <text>Loading...</text>
+        }
+        else if (Movies.Count == 0)
+        {
+            <text>No existe registros para mostrart...</text>
+        }
+        else
+        {
+            @for (var i = 0; i < Movies.Count; i++)
+            {
+                <div style="background-color: @(i % 2 == 0 ? "#96F77A" : "#C4F26D")">
+                    <p>@(i + 1)) Title: @((MarkupString)@Movies[i].Title)</p>
+                    <p>Release Date: <b>@Movies[i].ReleaseDate.ToString("dd MM yyyy")</b></p>
+                </div>
+            }
+        }*@
+    <MoviesLists Movies="Movies" />
+</div>
+
+@*<div>
+        <h2>New Movie</h2>
+        <ExampleTextbox placeholder="Movie Name"/>
+        <ExampleTextbox @attributes="@(new Dictionary<string, object>()
+                                       {
+                                           {"placeholder", "new1" },
+                                           {"disabled",true }
+                                       })" />
+        <ExampleTextbox @attributes="EjemploTextboxParametros" />
+    </div>*@
+
+<button @onclick="AddMovie">Add Movie</button>
+
+@code{
+
+    [CascadingParameter] private AppState appState { get; set; }
+    private Dictionary<string, object> EjemploTextboxParametros = new Dictionary<string, object>()
+                               {
+                                       {"placeholder", "new2" },
+                                       {"disabled",true }
+                                   };
+
+    private List<Movie> Movies;
+    protected override void OnInitialized()
+    {
+        //await Task.Delay(3000);
+        //movies = new List<Movie>();
+        //movies = null;
+
+        Movies = repositorio.ObtenerPeliculas();
+
+    }
+
+    void AddMovie()
+    {
+        Movies.Add(new Movie() { Title = "New Movie", ReleaseDate = DateTime.Today });
+    }
+    /*
+    string name = "HP";
+
+
+    Movie spiderman = new Movie()
+    {
+        Title = "Spider-Man",
+        ReleaseDate = new DateTime(2020, 7, 2)
+    };
+
+
+    public Movie Pelicula { get { return ObtenerPelicula(); } }
+    private Movie ObtenerPelicula()
+    {
+        return new Movie()
+        {
+            Title = "Movie 1",
+            ReleaseDate = new DateTime(2020, 7, 2)
+        };
+    }
+
+
+    //    List<Movie> movies;
+    //    protected override void OnInitialized()
+    //    {
+    //        movies = new List<Movie>()
+    //{
+    //            new Movie(){Title = "Movie 1", ReleaseDate = new DateTime(2020,2,2) },
+    //            new Movie(){Title = "Movie 2", ReleaseDate = new DateTime(2019,9,2) },
+    //            new Movie(){Title = "Movie 3", ReleaseDate = new DateTime(2015,1,2) },
+    //            new Movie(){Title = "Movie 4", ReleaseDate = new DateTime(2019,2,2) },
+    //        };
+    //    }
+
+
+    public List<Movie> Peliculas { get { return ObtenerPeliculas(); } }
+    private List<Movie> ObtenerPeliculas()
+    {
+        return new List<Movie>()
+        {
+            new Movie(){Title = "<b>Movie 1</b>", ReleaseDate = new DateTime(2020,2,2) },
+            new Movie(){Title = "<i>Movie 2<i>", ReleaseDate = new DateTime(2019,9,2) },
+            new Movie(){Title = "<em>Movie 3<em>", ReleaseDate = new DateTime(2015,1,2) },
+            new Movie(){Title = "<u>Movie 4</u>", ReleaseDate = new DateTime(2019,2,2) },
+        };
+    }
+
+    List<Movie> Movies;
+    protected override async Task OnInitializedAsync() //Metodo se carga al momento que se carga el archivo de razor
+    {
+        await Task.Delay(3000);
+        Movies = ObtenerPeliculas();
+    }
+
+    //string CustomToUpper(string value) => value.ToUpper();
+
+    void WriteInLog()
+    {
+        Console.WriteLine("I've been clicked! (from method)");
+    }
+    */
+}
