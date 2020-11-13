@@ -1,13 +1,13 @@
 ﻿@inject IJSRuntime js
 
-@*<input type="checkbox" @onchange="@(() => displayButtons = !displayButtons)" />*@
-<input type="checkbox" @bind="displayButtons" />
+<div style="display: flex; flex-wrap: wrap; align-items: center;">
+    <GenericList Listado="Movies">
+        <HayRegistros Context="movie">
+            <IndividualMovie Movie="movie" MovieDelete="MovieDelete" />
+        </HayRegistros>
+    </GenericList>
+</div>
 
-<GenericList Listado="Movies">
-    <HayRegistros Context="movie">
-        <IndividualMovie Movie="movie" DisplayButtons="displayButtons" MovieDelete="MovieDelete" />
-    </HayRegistros>
-</GenericList>
 
 
 @code {

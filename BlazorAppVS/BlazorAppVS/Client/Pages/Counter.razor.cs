@@ -13,7 +13,6 @@ namespace BlazorAppVS.Client.Pages
         [Inject] protected ServicioSingleton Singleton { get; set; }
         [Inject] protected ServicioTransient Transient { get; set; }
         [Inject] protected IJSRuntime JS { get; set; }
-        [CascadingParameter] protected AppState appState { get; set; }
 
 
         protected int currentCount = 0;

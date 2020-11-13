@@ -1,12 +1,12 @@
-﻿<div>
-    <p>Title: <b>@Movie.Title</b></p>
-    <p>Release Date: <b>@Movie.ReleaseDate.ToString("dd MM yyyy")</b></p>
-    @if (DisplayButtons)
-    {
-        <div>
-            <button @onclick="@(() => MovieDelete.InvokeAsync(Movie))">Delete</button>
-        </div>
-    }
+﻿<div style="margin-right: 2%; margin-bottom: 10px; text-align: center;">
+    <a>
+        <img src="@Movie.Poster" alt="Poster" style="width: 225px; height: 300px;" />
+    </a>
+    <p style="max-width: 225px; height: 44px; font-size: 15px; font-weight: bold;">@Movie.TitleCortado</p>
+    <div>
+        <button type="button" class="btn btn-info">Editar</button>
+        <button type="button" class="btn btn-danger" @onclick="@(() => MovieDelete.InvokeAsync(Movie))">Borrar</button>
+    </div>
 </div>
 
 @code {
