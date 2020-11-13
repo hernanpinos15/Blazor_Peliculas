@@ -773,6 +773,6 @@ H:\HP\1. Portafolio\WebAssembly_Blazor_Peliculas\BlazorAppVS\BlazorAppVS\Client\
 H:\HP\1. Portafolio\WebAssembly_Blazor_Peliculas\BlazorAppVS\BlazorAppVS\Client\obj\Debug\netstandard2.1\Razor\Pages\People\AddPeople.razor.g.cs
 H:\HP\1. Portafolio\WebAssembly_Blazor_Peliculas\BlazorAppVS\BlazorAppVS\Client\obj\Debug\netstandard2.1\Razor\Pages\People\EdditPeople.razor.g.cs
 H:\HP\1. Portafolio\WebAssembly_Blazor_Peliculas\BlazorAppVS\BlazorAppVS\Client\obj\Debug\netstandard2.1\Razor\Shared\CustomNotFound.razor.g.cs
-H:\HP\1. Portafolio\WebAssembly_Blazor_Peliculas\BlazorAppVS\BlazorAppVS\Client\obj\Debug\netstandard2.1\integrity\rfXH0urdChAUGVP9CObvgOVsSklG97vAjRIY0orde8A=.hash
-H:\HP\1. Portafolio\WebAssembly_Blazor_Peliculas\BlazorAppVS\BlazorAppVS\Client\obj\Debug\netstandard2.1\integrity\Z500qhWrx8z2aGzM6kKVBwUiLQleZqDaYW3LZ9ldZ9k=.hash
-H:\HP\1. Portafolio\WebAssembly_Blazor_Peliculas\BlazorAppVS\BlazorAppVS\Client\obj\Debug\netstandard2.1\integrity\QCGNxomAfrZlgWwgzAaGlfu05a3ZVzTqHhjghNUHqJc=.hash
+H:\HP\1. Portafolio\WebAssembly_Blazor_Peliculas\BlazorAppVS\BlazorAppVS\Client\obj\Debug\netstandard2.1\integrity\PJtQONyoAQ6I4nSIntzzC-Pjsed4uUT1sJdy5S759R4=.hash
+H:\HP\1. Portafolio\WebAssembly_Blazor_Peliculas\BlazorAppVS\BlazorAppVS\Client\obj\Debug\netstandard2.1\integrity\MfyMwdlE47l2Aet4JuQ_C6gGAeRTq5m7rjOFwdYef74=.hash
+H:\HP\1. Portafolio\WebAssembly_Blazor_Peliculas\BlazorAppVS\BlazorAppVS\Client\obj\Debug\netstandard2.1\integrity\PQIyu_MIrkEDXBpuyEThI_MY0KBcKOdFXwV5hMHGHDY=.hash
