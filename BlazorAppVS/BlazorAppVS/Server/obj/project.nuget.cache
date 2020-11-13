@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bRPXZtrf3BEWznNic9CUQSIRQVn6TwdPoWEhkCeQSYJFxsgv5ohYXEMnkd8XIQXeqiKunfdrdc78el7i2xrgPA==",
+  "dgSpecHash": "jBxWS21IIm6HmrVkWvvV8HwzKrIF9qXkHCqt4dEWKMxCpVPSyLRYurlnnU6IBr+V9RbBBIyRbdkfvz+X9R+sRA==",
   "success": true,
-  "projectFilePath": "H:\\HP\\1. Portafolio\\BlazorAppVS\\BlazorAppVS\\Server\\BlazorAppVS.Server.csproj",
+  "projectFilePath": "H:\\HP\\1. Portafolio\\WebAssembly_Blazor_Peliculas\\BlazorAppVS\\BlazorAppVS\\Server\\BlazorAppVS.Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\herna\\.nuget\\packages\\microsoft.aspnetcore.authorization\\3.1.6\\microsoft.aspnetcore.authorization.3.1.6.nupkg.sha512",
     "C:\\Users\\herna\\.nuget\\packages\\microsoft.aspnetcore.components\\3.1.6\\microsoft.aspnetcore.components.3.1.6.nupkg.sha512",

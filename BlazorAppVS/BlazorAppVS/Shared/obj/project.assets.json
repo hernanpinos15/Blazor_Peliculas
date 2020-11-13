@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\HP\\1. Portafolio\\BlazorAppVS\\BlazorAppVS\\Shared\\BlazorAppVS.Shared.csproj",
+      "projectUniqueName": "H:\\HP\\1. Portafolio\\WebAssembly_Blazor_Peliculas\\BlazorAppVS\\BlazorAppVS\\Shared\\BlazorAppVS.Shared.csproj",
       "projectName": "BlazorAppVS.Shared",
-      "projectPath": "H:\\HP\\1. Portafolio\\BlazorAppVS\\BlazorAppVS\\Shared\\BlazorAppVS.Shared.csproj",
+      "projectPath": "H:\\HP\\1. Portafolio\\WebAssembly_Blazor_Peliculas\\BlazorAppVS\\BlazorAppVS\\Shared\\BlazorAppVS.Shared.csproj",
       "packagesPath": "C:\\Users\\herna\\.nuget\\packages\\",
-      "outputPath": "H:\\HP\\1. Portafolio\\BlazorAppVS\\BlazorAppVS\\Shared\\obj\\",
+      "outputPath": "H:\\HP\\1. Portafolio\\WebAssembly_Blazor_Peliculas\\BlazorAppVS\\BlazorAppVS\\Shared\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "H:\\HP\\1. Portafolio\\BlazorAppVS\\BlazorAppVS\\Client\\BlazorAppVS.Client.csproj": {}
+    "H:\\HP\\1. Portafolio\\WebAssembly_Blazor_Peliculas\\BlazorAppVS\\BlazorAppVS\\Client\\BlazorAppVS.Client.csproj": {}
   },
   "projects": {
-    "H:\\HP\\1. Portafolio\\BlazorAppVS\\BlazorAppVS\\Client\\BlazorAppVS.Client.csproj": {
+    "H:\\HP\\1. Portafolio\\WebAssembly_Blazor_Peliculas\\BlazorAppVS\\BlazorAppVS\\Client\\BlazorAppVS.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\HP\\1. Portafolio\\BlazorAppVS\\BlazorAppVS\\Client\\BlazorAppVS.Client.csproj",
+        "projectUniqueName": "H:\\HP\\1. Portafolio\\WebAssembly_Blazor_Peliculas\\BlazorAppVS\\BlazorAppVS\\Client\\BlazorAppVS.Client.csproj",
         "projectName": "BlazorAppVS.Client",
-        "projectPath": "H:\\HP\\1. Portafolio\\BlazorAppVS\\BlazorAppVS\\Client\\BlazorAppVS.Client.csproj",
+        "projectPath": "H:\\HP\\1. Portafolio\\WebAssembly_Blazor_Peliculas\\BlazorAppVS\\BlazorAppVS\\Client\\BlazorAppVS.Client.csproj",
         "packagesPath": "C:\\Users\\herna\\.nuget\\packages\\",
-        "outputPath": "H:\\HP\\1. Portafolio\\BlazorAppVS\\BlazorAppVS\\Client\\obj\\",
+        "outputPath": "H:\\HP\\1. Portafolio\\WebAssembly_Blazor_Peliculas\\BlazorAppVS\\BlazorAppVS\\Client\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -31,8 +31,8 @@
         "frameworks": {
           "netstandard2.1": {
             "projectReferences": {
-              "H:\\HP\\1. Portafolio\\BlazorAppVS\\BlazorAppVS\\Shared\\BlazorAppVS.Shared.csproj": {
-                "projectPath": "H:\\HP\\1. Portafolio\\BlazorAppVS\\BlazorAppVS\\Shared\\BlazorAppVS.Shared.csproj"
+              "H:\\HP\\1. Portafolio\\WebAssembly_Blazor_Peliculas\\BlazorAppVS\\BlazorAppVS\\Shared\\BlazorAppVS.Shared.csproj": {
+                "projectPath": "H:\\HP\\1. Portafolio\\WebAssembly_Blazor_Peliculas\\BlazorAppVS\\BlazorAppVS\\Shared\\BlazorAppVS.Shared.csproj"
               }
             }
           }
@@ -84,14 +84,14 @@
         }
       }
     },
-    "H:\\HP\\1. Portafolio\\BlazorAppVS\\BlazorAppVS\\Shared\\BlazorAppVS.Shared.csproj": {
+    "H:\\HP\\1. Portafolio\\WebAssembly_Blazor_Peliculas\\BlazorAppVS\\BlazorAppVS\\Shared\\BlazorAppVS.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\HP\\1. Portafolio\\BlazorAppVS\\BlazorAppVS\\Shared\\BlazorAppVS.Shared.csproj",
+        "projectUniqueName": "H:\\HP\\1. Portafolio\\WebAssembly_Blazor_Peliculas\\BlazorAppVS\\BlazorAppVS\\Shared\\BlazorAppVS.Shared.csproj",
         "projectName": "BlazorAppVS.Shared",
-        "projectPath": "H:\\HP\\1. Portafolio\\BlazorAppVS\\BlazorAppVS\\Shared\\BlazorAppVS.Shared.csproj",
+        "projectPath": "H:\\HP\\1. Portafolio\\WebAssembly_Blazor_Peliculas\\BlazorAppVS\\BlazorAppVS\\Shared\\BlazorAppVS.Shared.csproj",
         "packagesPath": "C:\\Users\\herna\\.nuget\\packages\\",
-        "outputPath": "H:\\HP\\1. Portafolio\\BlazorAppVS\\BlazorAppVS\\Shared\\obj\\",
+        "outputPath": "H:\\HP\\1. Portafolio\\WebAssembly_Blazor_Peliculas\\BlazorAppVS\\BlazorAppVS\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

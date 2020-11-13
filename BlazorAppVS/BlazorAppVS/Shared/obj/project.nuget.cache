@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hObol56Ig1vDeEtdTvEwMiL5n5z7s9NFHg33zjIigL3QCZaOK9iajb8DIIecYOfC+DWRUvGAn/4ghER3BpY3hA==",
+  "dgSpecHash": "EFDI/0UmMtXXv1WQV2fgDE+jPgft+uGhkRc8BvmM9bYTq3m3qpdX7ELg3HIzTJzXZdPEjFMSPHJY688rF8ddaw==",
   "success": true,
-  "projectFilePath": "H:\\HP\\1. Portafolio\\BlazorAppVS\\BlazorAppVS\\Shared\\BlazorAppVS.Shared.csproj",
+  "projectFilePath": "H:\\HP\\1. Portafolio\\WebAssembly_Blazor_Peliculas\\BlazorAppVS\\BlazorAppVS\\Shared\\BlazorAppVS.Shared.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

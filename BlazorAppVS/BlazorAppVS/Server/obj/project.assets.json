@@ -963,11 +963,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\HP\\1. Portafolio\\BlazorAppVS\\BlazorAppVS\\Server\\BlazorAppVS.Server.csproj",
+      "projectUniqueName": "H:\\HP\\1. Portafolio\\WebAssembly_Blazor_Peliculas\\BlazorAppVS\\BlazorAppVS\\Server\\BlazorAppVS.Server.csproj",
       "projectName": "BlazorAppVS.Server",
-      "projectPath": "H:\\HP\\1. Portafolio\\BlazorAppVS\\BlazorAppVS\\Server\\BlazorAppVS.Server.csproj",
+      "projectPath": "H:\\HP\\1. Portafolio\\WebAssembly_Blazor_Peliculas\\BlazorAppVS\\BlazorAppVS\\Server\\BlazorAppVS.Server.csproj",
       "packagesPath": "C:\\Users\\herna\\.nuget\\packages\\",
-      "outputPath": "H:\\HP\\1. Portafolio\\BlazorAppVS\\BlazorAppVS\\Server\\obj\\",
+      "outputPath": "H:\\HP\\1. Portafolio\\WebAssembly_Blazor_Peliculas\\BlazorAppVS\\BlazorAppVS\\Server\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -987,11 +987,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "H:\\HP\\1. Portafolio\\BlazorAppVS\\BlazorAppVS\\Client\\BlazorAppVS.Client.csproj": {
-              "projectPath": "H:\\HP\\1. Portafolio\\BlazorAppVS\\BlazorAppVS\\Client\\BlazorAppVS.Client.csproj"
+            "H:\\HP\\1. Portafolio\\WebAssembly_Blazor_Peliculas\\BlazorAppVS\\BlazorAppVS\\Client\\BlazorAppVS.Client.csproj": {
+              "projectPath": "H:\\HP\\1. Portafolio\\WebAssembly_Blazor_Peliculas\\BlazorAppVS\\BlazorAppVS\\Client\\BlazorAppVS.Client.csproj"
             },
-            "H:\\HP\\1. Portafolio\\BlazorAppVS\\BlazorAppVS\\Shared\\BlazorAppVS.Shared.csproj": {
-              "projectPath": "H:\\HP\\1. Portafolio\\BlazorAppVS\\BlazorAppVS\\Shared\\BlazorAppVS.Shared.csproj"
+            "H:\\HP\\1. Portafolio\\WebAssembly_Blazor_Peliculas\\BlazorAppVS\\BlazorAppVS\\Shared\\BlazorAppVS.Shared.csproj": {
+              "projectPath": "H:\\HP\\1. Portafolio\\WebAssembly_Blazor_Peliculas\\BlazorAppVS\\BlazorAppVS\\Shared\\BlazorAppVS.Shared.csproj"
             }
           }
         }
