@@ -295,6 +295,17 @@
           "BlazorAppVS.Server.dll": {}
         }
       },
+      "Markdig/0.22.0": {
+        "runtime": {
+          "lib/netcoreapp3.1/Markdig.dll": {
+            "assemblyVersion": "0.22.0.0",
+            "fileVersion": "0.22.0.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Markdig.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Authorization/3.1.6": {
         "dependencies": {
           "Microsoft.AspNetCore.Metadata": "3.1.6",
@@ -685,6 +696,7 @@
       "BlazorAppVS.Client/1.0.0": {
         "dependencies": {
           "BlazorAppVS.Shared": "1.0.0",
+          "Markdig": "0.22.0",
           "Microsoft.AspNetCore.Components.WebAssembly": "3.2.1",
           "System.Net.Http.Json": "3.2.0",
           "Tewr.Blazor.FileReader": "2.1.0.20274"
@@ -2274,6 +2286,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Markdig/0.22.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/GbIsc1Dc/fOPqJM2sWIlWymgRAVfJhet+MY1Ze46HpDMyl+9TTfs4AdYbXx5QZo7eRh+Ew7A/nyGSVNCuYd9g==",
+      "path": "markdig/0.22.0",
+      "hashPath": "markdig.0.22.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Authorization/3.1.6": {
       "type": "package",

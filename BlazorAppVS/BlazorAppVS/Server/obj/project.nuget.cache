@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "UmoH+W1JP336iSiqtVS0qmmuMgrTBE4+DRSj9XO0HnzsQixzbfzS1u8jtke8kBVw2PEu9CSQ3w1FUT6dIOfR9A==",
+  "dgSpecHash": "hOMCJSTuTdUeoBHaLx9hTjyDUvrwd7IWgvJ3zE7OV2wH73IYSVMmtjuk1ekCPQhIITTqsi17cN1O1sNDl8IWMA==",
   "success": true,
   "projectFilePath": "H:\\HP\\1. Portafolio\\WebAssembly_Blazor_Peliculas\\BlazorAppVS\\BlazorAppVS\\Server\\BlazorAppVS.Server.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\herna\\.nuget\\packages\\markdig\\0.22.0\\markdig.0.22.0.nupkg.sha512",
     "C:\\Users\\herna\\.nuget\\packages\\microsoft.aspnetcore.authorization\\3.1.6\\microsoft.aspnetcore.authorization.3.1.6.nupkg.sha512",
     "C:\\Users\\herna\\.nuget\\packages\\microsoft.aspnetcore.components\\3.1.6\\microsoft.aspnetcore.components.3.1.6.nupkg.sha512",
     "C:\\Users\\herna\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\3.1.6\\microsoft.aspnetcore.components.analyzers.3.1.6.nupkg.sha512",

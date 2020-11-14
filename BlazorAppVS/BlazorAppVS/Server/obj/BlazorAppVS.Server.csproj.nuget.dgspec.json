@@ -46,6 +46,10 @@
       "frameworks": {
         "netstandard2.1": {
           "dependencies": {
+            "Markdig": {
+              "target": "Package",
+              "version": "[0.22.0, )"
+            },
             "Microsoft.AspNetCore.Components.WebAssembly": {
               "target": "Package",
               "version": "[3.2.1, )"
