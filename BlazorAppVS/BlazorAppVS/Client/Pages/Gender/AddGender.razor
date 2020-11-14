@@ -1,18 +1,8 @@
 ﻿@page "/generos/crear"
 
-<h3>Add Gender</h3>
+<h3>Crear Género</h3>
 
-<EditForm Model="Gender" OnValidSubmit="Crear">
-    <DataAnnotationsValidator />
-    <div class="form-group">
-        <label>Nombre:</label>
-        <div>
-            <InputText class="form-control" @bind-Value="@Gender.Name" />
-            <ValidationMessage For="@(() => Gender.Name)" />
-        </div>
-    </div>
-    <button class="btn btn-success" type="submit">Guardar Cambios</button>
-</EditForm>
+<FormularioGender OnValidSubmit="Crear" Gender="Gender" />
 
 @code {
     private Gender Gender = new Gender();
