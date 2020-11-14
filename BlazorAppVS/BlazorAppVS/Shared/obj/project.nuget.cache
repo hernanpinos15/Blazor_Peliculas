@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "EFDI/0UmMtXXv1WQV2fgDE+jPgft+uGhkRc8BvmM9bYTq3m3qpdX7ELg3HIzTJzXZdPEjFMSPHJY688rF8ddaw==",
+  "dgSpecHash": "eByHO9bgNCYQ86xushNHNn1ClzHjUrTruzTsMhQQvlogkHJUjVwxs0eoIdrBW0sKO+zUSjvClBxCP+f8LMrWkQ==",
   "success": true,
   "projectFilePath": "H:\\HP\\1. Portafolio\\WebAssembly_Blazor_Peliculas\\BlazorAppVS\\BlazorAppVS\\Shared\\BlazorAppVS.Shared.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\herna\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

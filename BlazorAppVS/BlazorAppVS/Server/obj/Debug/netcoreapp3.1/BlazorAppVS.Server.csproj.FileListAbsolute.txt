@@ -428,3 +428,4 @@ H:\HP\1. Portafolio\WebAssembly_Blazor_Peliculas\BlazorAppVS\BlazorAppVS\Server\
 H:\HP\1. Portafolio\WebAssembly_Blazor_Peliculas\BlazorAppVS\BlazorAppVS\Server\obj\Debug\netcoreapp3.1\BlazorAppVS.Server.dll
 H:\HP\1. Portafolio\WebAssembly_Blazor_Peliculas\BlazorAppVS\BlazorAppVS\Server\obj\Debug\netcoreapp3.1\BlazorAppVS.Server.pdb
 H:\HP\1. Portafolio\WebAssembly_Blazor_Peliculas\BlazorAppVS\BlazorAppVS\Server\obj\Debug\netcoreapp3.1\BlazorAppVS.Server.genruntimeconfig.cache
+H:\HP\1. Portafolio\WebAssembly_Blazor_Peliculas\BlazorAppVS\BlazorAppVS\Server\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll

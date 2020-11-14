@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "jBxWS21IIm6HmrVkWvvV8HwzKrIF9qXkHCqt4dEWKMxCpVPSyLRYurlnnU6IBr+V9RbBBIyRbdkfvz+X9R+sRA==",
+  "dgSpecHash": "Qc0f8mH1fYOMVZZNvgwhpa5ZY786LL2audQ6Hf9Q/rwTC+yQGRrlr5uIVySyXeMYc84mkYKwYR92cwK2Pw8klw==",
   "success": true,
   "projectFilePath": "H:\\HP\\1. Portafolio\\WebAssembly_Blazor_Peliculas\\BlazorAppVS\\BlazorAppVS\\Server\\BlazorAppVS.Server.csproj",
   "expectedPackageFiles": [
@@ -29,6 +29,7 @@
     "C:\\Users\\herna\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.6\\microsoft.extensions.primitives.3.1.6.nupkg.sha512",
     "C:\\Users\\herna\\.nuget\\packages\\microsoft.jsinterop\\3.1.6\\microsoft.jsinterop.3.1.6.nupkg.sha512",
     "C:\\Users\\herna\\.nuget\\packages\\microsoft.jsinterop.webassembly\\3.2.1\\microsoft.jsinterop.webassembly.3.2.1.nupkg.sha512",
+    "C:\\Users\\herna\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Users\\herna\\.nuget\\packages\\system.net.http.json\\3.2.0\\system.net.http.json.3.2.0.nupkg.sha512",
     "C:\\Users\\herna\\.nuget\\packages\\system.text.json\\4.7.1\\system.text.json.4.7.1.nupkg.sha512"
   ],
