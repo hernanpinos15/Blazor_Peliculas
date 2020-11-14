@@ -3,13 +3,26 @@
 
 <h3>Crear Película</h3>
 
-<FormularioMovie Movie="Movie" OnValidSubmit="Crear" >
-
+<FormularioMovie Movie="Movie" OnValidSubmit="Crear" 
+                 GenerosNoSeleccionados="GenerosNoSeleccionados" >
 </FormularioMovie>
 
 @code {
 
     private Movie Movie = new Movie();
+    private List<Gender> GenerosNoSeleccionados = new List<Gender>();
+
+    protected override void OnInitialized()
+    {
+        GenerosNoSeleccionados = new List<Gender>()
+        {
+            new Gender(){ Id= 1, Name = "Comedia"},
+            new Gender(){ Id= 2, Name = "Drama"},
+            new Gender(){ Id= 3, Name = "Amor"},
+            new Gender(){ Id= 4, Name = "Acción"}
+        };
+    }
+
     void Crear()
     {
         Console.WriteLine(navigationManager.BaseUri);

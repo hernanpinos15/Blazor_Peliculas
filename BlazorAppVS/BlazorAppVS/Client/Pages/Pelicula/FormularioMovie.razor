@@ -36,13 +36,37 @@
     <div class="form-group">
         <InputImg Label="Foto" ImagenSeleccionada="ImagenSeleccionada" ImagenTemporal="" />
     </div>
+    <div class="form-group">
+        <label>Géneros:</label>
+        <div>
+            <SelectorMultiple Seleccionados="Seleccionados" NoSeleccionados="NoSeleccionados">
+
+            </SelectorMultiple>
+        </div>
+    </div>
     <button type="submit" class="btn btn-success">Salvar Película</button>
 </EditForm>  
 
 @code {
     [Parameter] public Movie Movie { get; set; }
     [Parameter] public EventCallback OnValidSubmit { get; set; }
+    [Parameter] public List<Gender> GenerosSeleccionados { get; set; } = new List<Gender>();
+    [Parameter] public List<Gender> GenerosNoSeleccionados { get; set; } = new List<Gender>();
 
+    private List<SelectorMultipleModel> Seleccionados { get; set; } = new List<SelectorMultipleModel>();
+    private List<SelectorMultipleModel> NoSeleccionados { get; set; } = new List<SelectorMultipleModel>();
+    private string posterTemporal;
+
+    protected override void OnInitialized()
+    {
+        Seleccionados = GenerosSeleccionados.Select(x => new SelectorMultipleModel(x.Id.ToString(), x.Name)).ToList();
+        NoSeleccionados = GenerosNoSeleccionados.Select(x => new SelectorMultipleModel(x.Id.ToString(), x.Name)).ToList();
+        if (!string.IsNullOrWhiteSpace(Movie.Poster))
+        {
+            posterTemporal = Movie.Poster;
+            Movie.Poster = null;
+        }
+    }
     private void ImagenSeleccionada(string imagenBase64)
     {
         Movie.Poster = imagenBase64;

@@ -2,17 +2,31 @@
 
 <h3>Editar Pélícula</h3>
 
-<FormularioMovie Movie="Movie" OnValidSubmit="Editar">
-
+<FormularioMovie Movie="Movie" OnValidSubmit="Editar" 
+                 GenerosNoSeleccionados="GenerosNoSeleccionados"
+                 GenerosSeleccionados="GenerosSeleccionados">
 </FormularioMovie>
 
 @code {
     [Parameter] public int MovieId { get; set; }
     Movie Movie = new Movie();
+    private List<Gender> GenerosSeleccionados = new List<Gender>();
+    private List<Gender> GenerosNoSeleccionados = new List<Gender>();
 
     protected override void OnInitialized()
     {
         Movie = new Movie() { Id = MovieId, Title = "Mi pelicula" };
+        GenerosNoSeleccionados = new List<Gender>()
+        {
+            new Gender(){ Id= 1, Name = "Comedia"},
+            new Gender(){ Id= 2, Name = "Drama"},
+            new Gender(){ Id= 4, Name = "Acción"}
+        };
+
+        GenerosSeleccionados = new List<Gender>()
+        {
+            new Gender(){ Id= 3, Name = "Amor"}
+        };
     }
 
     private void Editar()

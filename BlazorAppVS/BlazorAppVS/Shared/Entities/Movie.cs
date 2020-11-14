@@ -17,6 +17,7 @@ namespace BlazorAppVS.Shared.Entities
         public DateTime? ReleaseDate { get; set; }
 
         public string Poster { get; set; }
+        public List<GenderMovie> GenderMovie { get; set; } = new List<GenderMovie>();
         public string TitleCortado
         {
             get
