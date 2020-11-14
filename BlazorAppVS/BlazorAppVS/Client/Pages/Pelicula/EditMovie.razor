@@ -1,7 +1,22 @@
 ﻿@page "/peliculas/editar/{MovieId:int}"
 
-<h3>EdditMovie</h3>
+<h3>Editar Pélícula</h3>
+
+<FormularioMovie Movie="Movie" OnValidSubmit="Editar">
+
+</FormularioMovie>
 
 @code {
     [Parameter] public int MovieId { get; set; }
+    Movie Movie = new Movie();
+
+    protected override void OnInitialized()
+    {
+        Movie = new Movie() { Id = MovieId, Title = "Mi pelicula" };
+    }
+
+    private void Editar()
+    {
+        Console.WriteLine("Editando Pelicula");
+    }
 }
