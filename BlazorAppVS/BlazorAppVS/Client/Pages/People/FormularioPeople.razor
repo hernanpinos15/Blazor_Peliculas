@@ -15,7 +15,7 @@
         </div>
     </div>
     <div class="form-group">
-
+        <InputImg Label="Foto" ImagenSeleccionada="ImagenSeleccionada" ImagenTemporal=""/>
     </div>
     <div class="form-group">
 
@@ -27,4 +27,18 @@
 @code {
     [Parameter] public People People { get; set; }
     [Parameter] public EventCallback OnValidSubmit { get; set; }
+    private string imagenTemporal;
+
+    protected override void OnInitialized()
+    {
+        if (!string.IsNullOrWhiteSpace(People.Foto))
+        {
+            imagenTemporal = People.Foto;
+            People.Foto = null;
+        }
+    }
+    private void ImagenSeleccionada(string imagenBase64)
+    {
+        People.Foto = imagenBase64;
+    }
 }

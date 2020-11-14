@@ -112,6 +112,15 @@
           "lib/netcoreapp3.1/Microsoft.AspNetCore.Metadata.dll": {}
         }
       },
+      "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/3.1.6": {
         "type": "package",
         "dependencies": {
@@ -326,13 +335,33 @@
           "lib/netcoreapp3.0/System.Text.Json.dll": {}
         }
       },
+      "Tewr.Blazor.FileReader/2.1.0.20274": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "3.1.3",
+          "Microsoft.Bcl.AsyncInterfaces": "1.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Tewr.Blazor.FileReader.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Tewr.Blazor.FileReader.dll": {}
+        },
+        "build": {
+          "buildTransitive/Tewr.Blazor.FileReader.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Tewr.Blazor.FileReader.props": {}
+        }
+      },
       "BlazorAppVS.Client/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
           "BlazorAppVS.Shared": "1.0.0",
           "Microsoft.AspNetCore.Components.WebAssembly": "3.2.1",
-          "System.Net.Http.Json": "3.2.0"
+          "System.Net.Http.Json": "3.2.0",
+          "Tewr.Blazor.FileReader": "2.1.0.20274"
         },
         "compile": {
           "bin/placeholder/BlazorAppVS.Client.dll": {}
@@ -653,6 +682,30 @@
         "lib/netstandard2.0/Microsoft.AspNetCore.Metadata.xml",
         "microsoft.aspnetcore.metadata.3.1.6.nupkg.sha512",
         "microsoft.aspnetcore.metadata.nuspec"
+      ]
+    },
+    "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
+      "sha512": "1Am6l4Vpn3/K32daEqZI+FFr96OlZkgwK2LcT3pZ2zWubR5zTPW3/FkO1Rat9kb7oQOa4rxgl9LJHc5tspCWfg==",
+      "type": "package",
+      "path": "microsoft.bcl.asyncinterfaces/1.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll",
+        "lib/net461/Microsoft.Bcl.AsyncInterfaces.xml",
+        "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll",
+        "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.xml",
+        "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
+        "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.xml",
+        "microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
+        "microsoft.bcl.asyncinterfaces.nuspec",
+        "ref/net461/Microsoft.Bcl.AsyncInterfaces.dll",
+        "ref/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll",
+        "ref/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "Microsoft.Extensions.Configuration/3.1.6": {
@@ -1038,6 +1091,26 @@
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "Tewr.Blazor.FileReader/2.1.0.20274": {
+      "sha512": "j8uXkNgfyh/rLHTOaoZyBo4Q3j2y6c2lknidZ39V6OH1iQTj0MS5dgCBb1/A/G7oIj2bNFIX+5fKGOl7gt3J5w==",
+      "type": "package",
+      "path": "tewr.blazor.filereader/2.1.0.20274",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/Tewr.Blazor.FileReader.props",
+        "buildMultiTargeting/Tewr.Blazor.FileReader.props",
+        "buildTransitive/Tewr.Blazor.FileReader.props",
+        "icon.png",
+        "lib/netstandard2.0/Blazor.FileReader.xml",
+        "lib/netstandard2.0/Tewr.Blazor.FileReader.dll",
+        "staticwebassets/FileReaderComponent.js",
+        "staticwebassets/FileReaderComponent.js.map",
+        "tewr.blazor.filereader.2.1.0.20274.nupkg.sha512",
+        "tewr.blazor.filereader.nuspec"
       ]
     },
     "BlazorAppVS.Client/1.0.0": {

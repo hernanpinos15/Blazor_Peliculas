@@ -404,6 +404,17 @@
           "lib/netcoreapp3.1/Microsoft.AspNetCore.Metadata.dll": {}
         }
       },
+      "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "4.700.19.56404"
+          }
+        },
+        "compile": {
+          "ref/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {}
+        }
+      },
       "Microsoft.Extensions.Configuration/3.1.6": {
         "dependencies": {
           "Microsoft.Extensions.Configuration.Abstractions": "3.1.6"
@@ -656,11 +667,27 @@
           "lib/netcoreapp3.0/System.Text.Json.dll": {}
         }
       },
+      "Tewr.Blazor.FileReader/2.1.0.20274": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "3.1.6",
+          "Microsoft.Bcl.AsyncInterfaces": "1.1.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Tewr.Blazor.FileReader.dll": {
+            "assemblyVersion": "2.1.0.20274",
+            "fileVersion": "2.1.0.20274"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Tewr.Blazor.FileReader.dll": {}
+        }
+      },
       "BlazorAppVS.Client/1.0.0": {
         "dependencies": {
           "BlazorAppVS.Shared": "1.0.0",
           "Microsoft.AspNetCore.Components.WebAssembly": "3.2.1",
-          "System.Net.Http.Json": "3.2.0"
+          "System.Net.Http.Json": "3.2.0",
+          "Tewr.Blazor.FileReader": "2.1.0.20274"
         },
         "runtime": {
           "BlazorAppVS.Client.dll": {}
@@ -2311,6 +2338,13 @@
       "path": "microsoft.aspnetcore.metadata/3.1.6",
       "hashPath": "microsoft.aspnetcore.metadata.3.1.6.nupkg.sha512"
     },
+    "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1Am6l4Vpn3/K32daEqZI+FFr96OlZkgwK2LcT3pZ2zWubR5zTPW3/FkO1Rat9kb7oQOa4rxgl9LJHc5tspCWfg==",
+      "path": "microsoft.bcl.asyncinterfaces/1.1.0",
+      "hashPath": "microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512"
+    },
     "Microsoft.Extensions.Configuration/3.1.6": {
       "type": "package",
       "serviceable": true,
@@ -2443,6 +2477,13 @@
       "sha512": "sha512-XwzMbct3iNepJaFylN1+l8weWlFburEzXidqleSsLvSXdHSIJHEKtRVKHPlpWcFmJX6k3goPFfVgUfp40RR+bg==",
       "path": "system.text.json/4.7.1",
       "hashPath": "system.text.json.4.7.1.nupkg.sha512"
+    },
+    "Tewr.Blazor.FileReader/2.1.0.20274": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-j8uXkNgfyh/rLHTOaoZyBo4Q3j2y6c2lknidZ39V6OH1iQTj0MS5dgCBb1/A/G7oIj2bNFIX+5fKGOl7gt3J5w==",
+      "path": "tewr.blazor.filereader/2.1.0.20274",
+      "hashPath": "tewr.blazor.filereader.2.1.0.20274.nupkg.sha512"
     },
     "BlazorAppVS.Client/1.0.0": {
       "type": "project",
