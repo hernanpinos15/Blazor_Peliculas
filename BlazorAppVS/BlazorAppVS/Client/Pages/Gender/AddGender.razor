@@ -1,4 +1,6 @@
 ﻿@page "/generos/crear"
+@inject IRepositorio repositoio
+@inject NavigationManager navigationManager
 
 <h3>Crear Género</h3>
 
@@ -7,8 +9,17 @@
 @code {
     private Gender Gender = new Gender();
 
-    private void Crear()
+    private async Task Crear()
     {
-        Console.WriteLine("Ver");
+        var httpResponse = await repositoio.Post("api/gender", Gender);
+        if (httpResponse.Error)
+        {
+            var body = await httpResponse.HttpResponseMessage.Content.ReadAsStringAsync();
+            Console.WriteLine(body);
+        }
+        else
+        {
+            navigationManager.NavigateTo("/generos");
+        }
     }
 }
