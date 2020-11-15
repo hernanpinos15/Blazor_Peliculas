@@ -9,6 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using BlazorAppVS.Client.Repositorios;
 using Tewr.Blazor.FileReader;
+using BlazorAppVS.Client.Helpers;
 
 namespace BlazorAppVS.Client
 {
@@ -31,6 +32,7 @@ namespace BlazorAppVS.Client
             services.AddTransient<ServicioTransient>();
             services.AddScoped<IRepositorio, Repositorio>();
             services.AddFileReaderService(options => options.InitializeOnFirstCall = true);
+            services.AddScoped<IMostrarMensajes, MostrarMensajes>();
         }
     }
 }

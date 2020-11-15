@@ -1,6 +1,7 @@
 ﻿@page "/generos/crear"
 @inject IRepositorio repositoio
 @inject NavigationManager navigationManager
+@inject IMostrarMensajes mostrarMensajes
 
 <h3>Crear Género</h3>
 
@@ -14,8 +15,8 @@
         var httpResponse = await repositoio.Post("api/gender", Gender);
         if (httpResponse.Error)
         {
-            var body = await httpResponse.HttpResponseMessage.Content.ReadAsStringAsync();
-            Console.WriteLine(body);
+            var body = await httpResponse.GetBody();
+            await mostrarMensajes.MostrarMensajeError(body);
         }
         else
         {
