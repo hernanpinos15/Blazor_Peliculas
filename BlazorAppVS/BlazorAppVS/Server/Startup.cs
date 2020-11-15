@@ -7,6 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
+using BlazorAppVS.Server.Helpers;
 
 namespace BlazorAppVS.Server
 {
@@ -27,6 +28,8 @@ namespace BlazorAppVS.Server
             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddControllersWithViews();
             services.AddRazorPages();
+            services.AddScoped<IAlmacenadorDeArchivos, AlmacenadorArchivosLocal>();
+            services.AddHttpContextAccessor();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

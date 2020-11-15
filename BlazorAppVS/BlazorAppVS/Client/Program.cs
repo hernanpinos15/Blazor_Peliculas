@@ -8,8 +8,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using BlazorAppVS.Client.Repositorios;
-using Tewr.Blazor.FileReader;
 using BlazorAppVS.Client.Helpers;
+using Tewr.Blazor.FileReader;
 
 namespace BlazorAppVS.Client
 {
