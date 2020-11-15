@@ -18,6 +18,7 @@ namespace BlazorAppVS.Shared.Entities
 
         public string Poster { get; set; }
         public List<GenderMovie> GenderMovie { get; set; } = new List<GenderMovie>();
+        public List<MovieActor> MoviesActor { get; set; }
         public string TitleCortado
         {
             get

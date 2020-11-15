@@ -4,11 +4,12 @@ using System.Text;
 
 namespace BlazorAppVS.Shared.Entities
 {
-    public class GenderMovie
+    public class VotoMovie
     {
+        public int Id { get; set; }
+        public int Voto { get; set; }
+        public DateTime FechaVoto { get; set; }
         public int MovieId { get; set; }
-        public int GenderId { get; set; }
-        public Gender Gender { get; set; }
         public Movie Movie { get; set; }
     }
 }

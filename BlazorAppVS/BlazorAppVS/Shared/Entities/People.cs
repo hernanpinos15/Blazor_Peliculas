@@ -14,5 +14,7 @@ namespace BlazorAppVS.Shared.Entities
         public string Foto { get; set; }
         [Required]
         public DateTime? FechaNacimiento { get; set; }
+        public List<MovieActor> MoviesActor { get; set; }
+
     }
 }

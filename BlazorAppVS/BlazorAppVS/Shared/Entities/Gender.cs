@@ -10,5 +10,6 @@ namespace BlazorAppVS.Shared.Entities
         public int Id { get; set; }
         [Required(ErrorMessage = "El campo {0} es requerido")] 
         public string Name { get; set; }
+        public List<GenderMovie> GenderMovies { get; set; }
     }
 }
