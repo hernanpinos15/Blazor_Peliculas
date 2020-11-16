@@ -10,28 +10,28 @@ namespace BlazorAppVS.Server.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class PeopleController: ControllerBase
+    public class MoviesController: ControllerBase
     {
         private readonly ApplicationDbContext context;
         private readonly IAlmacenadorDeArchivos almacenadorDeArchivos;
 
-        public PeopleController(ApplicationDbContext context, IAlmacenadorDeArchivos almacenadorDeArchivos)
+        public MoviesController(ApplicationDbContext context, IAlmacenadorDeArchivos almacenadorDeArchivos)
         {
             this.context = context;
             this.almacenadorDeArchivos = almacenadorDeArchivos;
         }
 
         [HttpPost]
-        public async Task<ActionResult<int>> Post(People people)
+        public async Task<ActionResult<int>> Post(Movie movie)
         {
-            if (!string.IsNullOrWhiteSpace(people.Foto))
+            if (!string.IsNullOrWhiteSpace(movie.Poster))
             {
-                var fotoPeople = Convert.FromBase64String(people.Foto);
-                people.Foto = await almacenadorDeArchivos.GuardarArchivo(fotoPeople, "jpg", "personas");
+                var posterMmovie = Convert.FromBase64String(movie.Poster);
+                movie.Poster = await almacenadorDeArchivos.GuardarArchivo(posterMmovie, "jpg", "peliculas");
             }
-            context.Add(people);
+            context.Add(movie);
             await context.SaveChangesAsync();
-            return people.Id;
+            return movie.Id;
         }
     }
 }

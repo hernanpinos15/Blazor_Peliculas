@@ -1,4 +1,4 @@
-﻿<EditForm Model="Movie" OnValidSubmit="OnValidSubmit">
+﻿<EditForm Model="Movie" OnValidSubmit="OnDataAnnonationsValidated">
     <DataAnnotationsValidator />
     <div class="form-group">
         <label>Título</label>
@@ -71,5 +71,16 @@
     private void ImagenSeleccionada(string imagenBase64)
     {
         Movie.Poster = imagenBase64;
+    }
+
+    private async Task OnDataAnnonationsValidated()
+    {
+        Movie.GenderMovie = Seleccionados.Select(x => new GenderMovie { GenderId = int.Parse(x.Llave) }).ToList();
+        if (!string.IsNullOrWhiteSpace(Movie.Poster))
+        { 
+            posterTemporal = null;
+        }
+
+        await OnValidSubmit.InvokeAsync(null);
     }
 }
