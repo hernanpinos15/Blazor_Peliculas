@@ -1,6 +1,8 @@
 ﻿using BlazorAppVS.Server.Helpers;
+using BlazorAppVS.Shared.DTOs;
 using BlazorAppVS.Shared.Entities;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,6 +21,30 @@ namespace BlazorAppVS.Server.Controllers
         {
             this.context = context;
             this.almacenadorDeArchivos = almacenadorDeArchivos;
+        }
+
+        [HttpGet]
+        public async Task<ActionResult<HomePageDTO>> Get()
+        {
+            var limite = 3;
+            var peliculasEnCartelera = await context.Movies
+                .Where(x => x.EnCartelera).Take(limite)
+                .OrderByDescending(x => x.ReleaseDate)
+                .ToListAsync();
+
+            var fechaActual = DateTime.Today;
+            var proximosEstrenos = await context.Movies
+                .Where(x => x.ReleaseDate > fechaActual)
+                .OrderBy(x => x.ReleaseDate).Take(limite)
+                .ToListAsync();
+
+            var response = new HomePageDTO()
+            {
+                PeliculasEnCartelera = peliculasEnCartelera,
+                ProximosEstrenos = proximosEstrenos
+            };
+
+            return response;
         }
 
         [HttpPost]

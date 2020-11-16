@@ -94,6 +94,13 @@ using BlazorAppVS.Client.Repositorios;
 #line hidden
 #nullable disable
 #nullable restore
+#line 13 "H:\HP\1. Portafolio\WebAssembly_Blazor_Peliculas\BlazorAppVS\BlazorAppVS\Client\_Imports.razor"
+using BlazorAppVS.Shared.DTOs;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 2 "H:\HP\1. Portafolio\WebAssembly_Blazor_Peliculas\BlazorAppVS\BlazorAppVS\Client\Shared\InputMarkdown.razor"
 using System.Linq.Expressions;
 

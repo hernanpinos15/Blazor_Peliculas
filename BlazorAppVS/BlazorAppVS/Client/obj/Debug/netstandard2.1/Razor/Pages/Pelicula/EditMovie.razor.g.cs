@@ -93,6 +93,13 @@ using BlazorAppVS.Client.Repositorios;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 13 "H:\HP\1. Portafolio\WebAssembly_Blazor_Peliculas\BlazorAppVS\BlazorAppVS\Client\_Imports.razor"
+using BlazorAppVS.Shared.DTOs;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/peliculas/editar/{MovieId:int}")]
     public partial class EditMovie : Microsoft.AspNetCore.Components.ComponentBase
     {
