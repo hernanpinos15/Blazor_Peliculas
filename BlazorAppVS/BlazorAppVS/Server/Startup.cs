@@ -30,6 +30,8 @@ namespace BlazorAppVS.Server
             services.AddRazorPages();
             services.AddScoped<IAlmacenadorDeArchivos, AlmacenadorArchivosLocal>();
             services.AddHttpContextAccessor();
+            services.AddMvc().AddNewtonsoftJson(options =>
+            options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

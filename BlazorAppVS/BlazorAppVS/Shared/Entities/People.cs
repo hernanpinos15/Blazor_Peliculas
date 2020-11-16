@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace BlazorAppVS.Shared.Entities
@@ -15,6 +16,8 @@ namespace BlazorAppVS.Shared.Entities
         [Required]
         public DateTime? FechaNacimiento { get; set; }
         public List<MovieActor> MoviesActor { get; set; }
+        [NotMapped]
+        public string Personaje { get; set; }
 
     }
 }

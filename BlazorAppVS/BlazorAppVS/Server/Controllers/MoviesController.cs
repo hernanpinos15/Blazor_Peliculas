@@ -47,6 +47,40 @@ namespace BlazorAppVS.Server.Controllers
             return response;
         }
 
+        [HttpGet("{id}")]
+        public async Task<ActionResult<PeliculaVisualizarDTO>> Get(int id)
+        {
+            var pelicula = await context.Movies.Where(x => x.Id == id)
+                .Include(x => x.GenderMovie).ThenInclude(x => x.Gender)
+                .Include(x => x.MoviesActor).ThenInclude(x => x.People)
+                .FirstOrDefaultAsync();
+
+            if (pelicula == null)
+            {
+                return NotFound();
+            }
+            var promedioVotos = 4;
+            var votoUusario = 5;
+
+            pelicula.MoviesActor = pelicula.MoviesActor.OrderBy(x => x.Orden).ToList();
+
+            var model = new PeliculaVisualizarDTO();
+            model.Movie = pelicula;
+            model.Genders = pelicula.GenderMovie.Select(x => x.Gender).ToList();
+            model.Actores = pelicula.MoviesActor.Select(x =>
+            new People
+            {
+                Nombre = x.People.Nombre,
+                Foto = x.People.Foto,
+                Personaje = x.Personaje,
+                Id = x.PeopleId
+            }).ToList();
+
+            model.PromedioVotos = promedioVotos;
+            model.VotoUsuario = votoUusario;
+            return model;
+        }
+
         [HttpPost]
         public async Task<ActionResult<int>> Post(Movie movie)
         {
@@ -54,6 +88,14 @@ namespace BlazorAppVS.Server.Controllers
             {
                 var posterMmovie = Convert.FromBase64String(movie.Poster);
                 movie.Poster = await almacenadorDeArchivos.GuardarArchivo(posterMmovie, "jpg", "peliculas");
+            }
+
+            if (movie.MoviesActor != null)
+            {
+                for (int i = 0; i < movie.MoviesActor.Count; i++)
+                {
+                    movie.MoviesActor[i].Orden = i + 1;
+                }
             }
             context.Add(movie);
             await context.SaveChangesAsync();

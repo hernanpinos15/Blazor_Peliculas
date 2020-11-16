@@ -4,7 +4,7 @@
     </a>
     <p style="max-width: 225px; height: 44px; font-size: 15px; font-weight: bold;"><a href="@urlMovie">@Movie.TitleCortado</a></p>
     <div>
-        <button type="button" class="btn btn-info">Editar</button>
+        <a class="btn btn-info">Editar</a>
         <button type="button" class="btn btn-danger" @onclick="@(() => MovieDelete.InvokeAsync(Movie))">Borrar</button>
     </div>
 </div>
@@ -17,6 +17,6 @@
     private string urlMovie = string.Empty;
     protected override void OnInitialized()
     {
-        urlMovie = $"pelicula/";
+        urlMovie = $"pelicula/{Movie?.Id}/{Movie?.Title?.Replace(" ", "-")}";
     }
 }
