@@ -1,6 +1,7 @@
 ﻿using BlazorAppVS.Server.Helpers;
 using BlazorAppVS.Shared.Entities;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,6 +20,12 @@ namespace BlazorAppVS.Server.Controllers
         {
             this.context = context;
             this.almacenadorDeArchivos = almacenadorDeArchivos;
+        }
+
+        [HttpGet]
+        public async Task<ActionResult<List<People>>> Get()
+        {
+            return await context.Peoples.ToListAsync();
         }
 
         [HttpPost]

@@ -1,5 +1,6 @@
 ﻿using BlazorAppVS.Shared.Entities;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,6 +17,12 @@ namespace BlazorAppVS.Server.Controllers
         public GenderController(ApplicationDbContext context)
         {
             this.context = context;
+        }
+
+        [HttpGet]
+        public async Task<ActionResult<List<Gender>>> Get()
+        {
+            return await context.Genders.ToListAsync();
         }
 
         [HttpPost]

@@ -1,11 +1,42 @@
 ﻿@page "/generos"
+@inject IRepositorio repositorio
 
-<h3>IndiceGender</h3>
+<h3>Indice Géneros</h3>
 
 <div class="form-group">
     <a class="btn btn-info" href="generos/crear">Add Género</a>
 </div>
 
-@code {
+<GenericList Listado="Genders">
+    <HayRegistrosCompletos>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Nombre</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Genders)
+                {
+                    <tr>
+                        <td>
+                            <a class="btn btn-success">Editar</a>
+                            <button class="btn btn-danger">Borrar</button>
+                        </td>
+                        <td>@item.Name</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </HayRegistrosCompletos>
+</GenericList>
 
+@code {
+    public List<Gender> Genders { get; set; }
+    protected async override Task OnInitializedAsync()
+    {
+        var responseHttp = await repositorio.Get<List<Gender>>("api/gender");
+        Genders = responseHttp.Response;
+    }
 }
